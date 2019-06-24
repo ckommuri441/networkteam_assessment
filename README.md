@@ -11,9 +11,13 @@ As per the teams requirement, i have utilized  AWS to provision infrastructure a
 
 Explanation of the files:
 
-Supervisord.conf --> This file is used to start the nginx service in container.
+Supervisord.conf --> This file is used to start the nginx service in container.                                                           
+
 Dockerfile       -->  Dockerfile which has the information to create the image.
+
 default          -->  This is nginx default page which i placed in "/etc/nginx/sites-enabled " directory in a container to serve the  
                      request.
+                     
 index.html       -->   It's a  custom index.html which is used serve the requirement. 
+
 Kubernetes_pod.yml --> Its a custom configuration which i used to spin the pods with load balancer in kubernetes.
